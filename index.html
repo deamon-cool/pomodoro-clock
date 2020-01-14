@@ -8,12 +8,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
     <link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
 
     <div id="pomodoro-container">
         <div id="pomodoro-clock">
+            <canvas height="200" width="200" id="poomodoro-canvas-timer"></canvas>
+
             <div id="pomodoro-timer"></div>
 
             <div>
@@ -23,7 +26,7 @@
             <div id="pomodoro-clock-actions">
                 <button id="pomodoro-start">
                     <i class="fas fa-play" id="play-icon"></i>
-                    <i class="fas fa-pause hidden" id="pause-icon"></i>
+                    <i class="hidden fas fa-pause" id="pause-icon"></i>
                 </button>
                 <button id="pomodoro-stop" class="hidden">
                     <i class="fas fa-stop"></i>
