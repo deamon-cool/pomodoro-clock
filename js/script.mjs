@@ -1,4 +1,4 @@
-import {testFunction} from './canvas-timer-script';
+import {testFunction} from './canvas-timer-script.mjs';
 
 const pomodoroTimer = document.querySelector('#pomodoro-timer');
 const startButton = document.querySelector('#pomodoro-start');
