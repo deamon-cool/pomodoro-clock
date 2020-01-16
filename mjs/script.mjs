@@ -26,6 +26,9 @@ const minuteToSeconds = mins => {
     return mins * 60;
 }
 
+let clockTimer;
+let sessionLabel;
+let workSessionLabel;
 
 let isClockRunning = false;
 
