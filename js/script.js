@@ -1,3 +1,5 @@
+import {testFunction} from './canvas-timer-script';
+
 const pomodoroTimer = document.querySelector('#pomodoro-timer');
 const startButton = document.querySelector('#pomodoro-start');
 const stopButton = document.querySelector('#pomodoro-stop');
@@ -114,6 +116,7 @@ const stepDown = () => {
         timeSpentInCurrentSession++;
         // decrease time left, increase time spent
         currentTimeLeftInSession--;
+        testFunction();
     } else if (currentTimeLeftInSession === 0) {
         // Time is over -> if work switch to break
         if (type === 'Work :)') {
@@ -193,3 +196,4 @@ const showStopIcon = () => {
     const stopButton = document.querySelector('#pomodoro-stop');
     stopButton.classList.remove('hidden');
 }
+
