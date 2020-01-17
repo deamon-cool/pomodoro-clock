@@ -8,6 +8,7 @@ let breakDurationInput = document.querySelector('#input-break-duration');
 
 startButton.addEventListener('click', () => {
     toggleClock();
+    checkSessionDuration();
 });
 
 stopButton.addEventListener('click', () => {
