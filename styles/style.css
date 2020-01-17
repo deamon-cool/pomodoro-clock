@@ -1,3 +1,16 @@
+body {
+   background-color: bisque;
+   text-align: center;
+}
+#pomodoro-container {
+   border: 2px solid red;
+   border-radius: 10px;
+
+}
+#poomodoro-canvas-timer {
+   background-color: red;
+   z-index: 1;
+}
 .hidden {
    display: none;
 }
