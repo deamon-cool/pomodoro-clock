@@ -5,8 +5,6 @@ var timerHeight = canvasTimer.canvas.height;
 var different;
 
 const fillCanvasTimer = (step, duration, time) => {
-    console.log(step, duration);
-
     different = ((step/duration) * Math.PI * 2 * 10);
 
     canvasTimer.clearRect(0, 0, timerWidth, timerHeight);
