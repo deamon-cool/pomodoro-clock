@@ -94,7 +94,7 @@ const displayCurrentTimeLeftInSession = () => {
     }
     if (hours > 0) result += `${hours}:`;
     result += `${addLeadingZeroes(minutes)}:${addLeadingZeroes(seconds)}`;
-    // pomodoroTimer.innerText = result.toString();
+
     fillCanvasTimer(timeSpentInCurrentSession, sessionDuration, result);
 }
 
@@ -129,13 +129,11 @@ const stepDown = () => {
             currentTimeLeftInSession = breakSessionDuration;
             displaySessionLog('Work :)');
             type = 'Break :D';
-            setUpdatedTimers();                                 // to można umieścić poniżej ???
             currentTaskLabel.value = 'Break :D';
             currentTaskLabel.disabled = true;
         } else {
             currentTimeLeftInSession = workSessionDuration;
             type = 'Work :)';
-            setUpdatedTimers();                                 // to można umieścić poniżej ???
             // If will be 'Break :D' after end of the time in the input so will be switched to workSessionLabel(input from the user)
             if (currentTaskLabel.value === 'Break :D') {
                 currentTaskLabel.value = workSessionLabel;
@@ -144,7 +142,7 @@ const stepDown = () => {
 
             displaySessionLog('Break :D');
         }
-        // setUpdatedTimers();
+        setUpdatedTimers();
         timeSpentInCurrentSession = 0;
     }
     displayCurrentTimeLeftInSession();
