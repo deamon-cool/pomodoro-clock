@@ -1,16 +1,25 @@
 body {
-   background-color: bisque;
+   font-family: arial;
+   background-color: lightyellow;
    text-align: center;
-}
-#pomodoro-container {
-   border: 2px solid red;
+   padding: 10px;
+   border: 2px solid rgba(255,0,0,.3);
    border-radius: 10px;
-
 }
-#poomodoro-canvas-timer {
-   background-color: red;
+#pomodoro-canvas-timer {
+   position: absolute;
+   z-index: 3;
+}
+#pomodoro-canvas-circle {
+   z-index: 3;
+}
+#pomodoro-canvas-shadow {
+   position: absolute;
    z-index: 1;
 }
 .hidden {
    display: none;
+}
+h3 {
+   font-size: 25px;
 }
