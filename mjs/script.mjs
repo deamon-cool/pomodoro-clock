@@ -51,6 +51,8 @@ breakDurationInput.value = '5';
 
 let isClockStopped = true;
 
+let sessionDuration = 0; // for canvas-timer
+
 const toggleClock = (reset) => {
     togglePlayPauseButton(reset);
     if (reset) {
