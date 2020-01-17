@@ -4,8 +4,8 @@ var timerWidth = canvasTimer.canvas.width;
 var timerHeight = canvasTimer.canvas.height;
 var different;
 
-const testFunction = () => {
-    console.log('message :)');
+const fillCanvasTimer = (step, duration) => {
+
 }
 
 export {testFunction};
