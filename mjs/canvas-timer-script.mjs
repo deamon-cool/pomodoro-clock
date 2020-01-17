@@ -4,7 +4,7 @@ var timerWidth = canvasTimer.canvas.width;
 var timerHeight = canvasTimer.canvas.height;
 var different;
 
-const fillCanvasTimer = (step, duration) => {
+const fillCanvasTimer = (step, duration, time) => {
     console.log(step, duration);
 
     different = ((step/duration) * Math.PI * 2 * 10);
@@ -21,10 +21,10 @@ const fillCanvasTimer = (step, duration) => {
 
     canvasTimer.font = '25px arial';
 
-    canvasTimer.fillText(step, 100, 110);
+    canvasTimer.fillText(time, 100, 110);
 
     canvasTimer.beginPath();
-    canvasTimer.arc(100, 100, 90, startingPoint, different/10+startingPoint);
+    canvasTimer.arc(100, 100, 90, startingPoint, -different/10+startingPoint);
 
     canvasTimer.stroke();
 }
