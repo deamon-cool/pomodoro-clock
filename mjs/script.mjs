@@ -1,6 +1,6 @@
 import {fillCanvasTimer} from './canvas-timer-script.mjs';
 
-const pomodoroTimer = document.querySelector('#pomodoro-timer');
+// const pomodoroTimer = document.querySelector('#pomodoro-timer');
 const startButton = document.querySelector('#pomodoro-start');
 const stopButton = document.querySelector('#pomodoro-stop');
 let workDurationInput = document.querySelector('#input-work-duration');
@@ -94,7 +94,7 @@ const displayCurrentTimeLeftInSession = () => {
     }
     if (hours > 0) result += `${hours}:`;
     result += `${addLeadingZeroes(minutes)}:${addLeadingZeroes(seconds)}`;
-    pomodoroTimer.innerText = result.toString();
+    // pomodoroTimer.innerText = result.toString();
     fillCanvasTimer(timeSpentInCurrentSession, sessionDuration, result);
 }
 
