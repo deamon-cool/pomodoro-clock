@@ -95,6 +95,7 @@ const displayCurrentTimeLeftInSession = () => {
     if (hours > 0) result += `${hours}:`;
     result += `${addLeadingZeroes(minutes)}:${addLeadingZeroes(seconds)}`;
     pomodoroTimer.innerText = result.toString();
+    fillCanvasTimer(timeSpentInCurrentSession, sessionDuration, result);
 }
 
 const stopClock = () => {
@@ -122,7 +123,6 @@ const stepDown = () => {
         timeSpentInCurrentSession++;
         // decrease time left, increase time spent
         currentTimeLeftInSession--;
-        fillCanvasTimer(timeSpentInCurrentSession, sessionDuration);
     } else if (currentTimeLeftInSession === 0) {
         // Time is over -> if work switch to break
         if (type === 'Work :)') {
