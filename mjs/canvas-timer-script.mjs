@@ -7,4 +7,4 @@ const fillCanvasTimer = (step, duration) => {
 
 }
 
-export {testFunction};
+export {fillCanvasTimer};
