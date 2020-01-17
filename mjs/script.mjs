@@ -122,7 +122,7 @@ const stepDown = () => {
         timeSpentInCurrentSession++;
         // decrease time left, increase time spent
         currentTimeLeftInSession--;
-        fillCanvasTimer(timeSpentInCurrentSession, );
+        fillCanvasTimer(timeSpentInCurrentSession, sessionDuration);
     } else if (currentTimeLeftInSession === 0) {
         // Time is over -> if work switch to break
         if (type === 'Work :)') {
@@ -203,3 +203,6 @@ const showStopIcon = () => {
     stopButton.classList.remove('hidden');
 }
 
+const checkSessionDuration = () => {
+    sessionDuration = currentTimeLeftInSession;
+}
