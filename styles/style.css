@@ -18,6 +18,10 @@ body {
 .hidden {
    display: none;
 }
+button {
+   padding: 10px 15px;
+   margin: 5px 10px 15px;
+}
 h3 {
    font-size: 25px;
 }
@@ -31,13 +35,11 @@ input {
 }
 #pomodoro-clock-task {
    width: 300px;
-
-
 }
 input:focus {
    border-color: red;
    outline: none;
 }
 input::placeholder {
-   color: blue;
+   color: rgba(255,0,0,.3);
 }
