@@ -69,9 +69,17 @@ input::placeholder {
    visibility: visible;
    font-size: 12px;
 }
-
-
-
 h3 {
    font-size: 25px;
+}
+ul {
+   list-style-type: none;
+}
+li {
+   margin-left: auto;
+   margin-right: auto;
+   width: 30%;
+   background-color: rgba(255,0,0,.3);
+   border-left: 5px solid red;
+   margin-top: 5px;
 }
