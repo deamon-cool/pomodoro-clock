@@ -20,3 +20,23 @@ body {
 h3 {
    font-size: 25px;
 }
+input {
+   height: 100%;
+   padding: 5px;
+   font-size: 20px;
+   color: red;
+   border: 2px solid rgba(255,0,0,.5);
+   border-radius: 10px;
+}
+#pomodoro-clock-task {
+   width: 300px;
+
+
+}
+input:focus {
+   outline: 3px solid red;
+   outline-r
+}
+input::placeholder {
+   color: blue;
+}
