@@ -35,9 +35,6 @@ button:focus {
 button:active {
    background-color: rgba(255,0,0,.9);
 }
-h3 {
-   font-size: 25px;
-}
 input {
    height: 100%;
    padding: 5px;
@@ -46,13 +43,18 @@ input {
    border: 3px solid rgba(255,0,0,.3);
    border-radius: 10px;
 }
-#pomodoro-clock-task {
-   width: 300px;
-}
 input:focus {
    border-color: red;
    outline: none;
 }
 input::placeholder {
    color: rgba(255,0,0,.3);
+}
+#pomodoro-clock-task {
+   width: 300px;
+   margin: 15px 10px 10px;
+}
+
+h3 {
+   font-size: 25px;
 }
