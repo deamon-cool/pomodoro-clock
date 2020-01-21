@@ -63,11 +63,6 @@ input::placeholder {
 }
 .pomodoro-input {
    margin: 10px 10px;
-}
-#input-work-duration {
-   width: 50px;
-}
-#input-break-duration {
    width: 50px;
 }
 
