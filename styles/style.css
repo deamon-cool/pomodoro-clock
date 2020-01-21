@@ -19,8 +19,15 @@ body {
    display: none;
 }
 button {
+   border: 1px solid red;
    padding: 10px 15px;
    margin: 5px 10px 15px;
+}
+button:hover {
+   box-shadow: 0 0 6px red;
+}
+button:focus {
+   outline: none;
 }
 h3 {
    font-size: 25px;
