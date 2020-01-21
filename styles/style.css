@@ -1,6 +1,7 @@
 body {
    box-sizing: border-box;
    font-family: arial;
+   color: red;
    background-color: lightyellow;
    text-align: center;
 }
@@ -37,6 +38,7 @@ button:active {
 }
 input {
    height: 100%;
+   background-color: rgb(255, 255, 242);
    padding: 5px;
    font-size: 20px;
    color: red;
@@ -54,6 +56,11 @@ input::placeholder {
    width: 300px;
    margin: 15px 10px 10px;
 }
+#pomodoro-clock-title {
+
+}
+
+
 
 h3 {
    font-size: 25px;
