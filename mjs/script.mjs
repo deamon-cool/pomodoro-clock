@@ -7,6 +7,22 @@ let workDurationInput = document.querySelector('#input-work-duration');
 let breakDurationInput = document.querySelector('#input-break-duration');
 let tipText = document.querySelector('.tip-hidden');
 
+// Initial text on the site
+let clockTaskInput = document.querySelector('#pomodoro-clock-task');
+clockTaskInput.setAttribute('placeholder', 'Enter your task...');
+
+let workLabel = document.querySelector('#work-label');
+workLabel.innerHTML = 'Work duration';
+
+let breakLabel = document.querySelector('#break-label');
+breakLabel.innerHTML = 'Break duration';
+
+tipText.innerHTML = 'Tip: Changes made here will reflect at the start of the next work/break session';
+
+let sessionListText = document.querySelector('#session-list-text');
+sessionListText.innerHTML = 'Yours sessions:';
+
+
 startButton.addEventListener('click', () => {
     toggleClock();
     checkSessionDuration();

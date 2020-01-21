@@ -31,27 +31,27 @@
             </div>
 
             <div>
-                <input type="text" id="pomodoro-clock-task" placeholder="Enter your task..."/>
+                <input type="text" id="pomodoro-clock-task"/>
             </div>
 
         </div>
 
         <div id="pomodoro-clock-actions">
             <div>
-                <label>Work duration</label>
+                <label id="work-label"></label>
                 <input type="number" name="input-work-duration" class="pomodoro-input" id="input-work-duration">
             </div>
             <div>
-                <label>Break duration</label>
+                <label id="break-label"></label>
                 <input type="number" name="input-break-duration" class="pomodoro-input" id="input-break-duration">
             </div>
             <div class="tip-hidden">
-                <i>Tip: Changes made here will reflect at the start of the next work/break session</i>
+                <i id="tip-text"></i>
             </div>
         </div>
 
         <div id="pomodoro-info">
-            <h3>Yours sessions:</h3>
+            <h3 id="session-list-text"></h3>
             <ul id="pomodoro-sessions">
             </ul>
         </div>
