@@ -5,6 +5,7 @@ const startButton = document.querySelector('#pomodoro-start');
 const stopButton = document.querySelector('#pomodoro-stop');
 let workDurationInput = document.querySelector('#input-work-duration');
 let breakDurationInput = document.querySelector('#input-break-duration');
+let tipText = document.querySelector('.tip-hidden');
 
 startButton.addEventListener('click', () => {
     toggleClock();
@@ -21,6 +22,22 @@ workDurationInput.addEventListener('input', () => {
 
 breakDurationInput.addEventListener('input', () => {
     updatedBreakSessionDuration = minuteToSeconds(breakDurationInput.value);
+});
+
+workDurationInput.addEventListener('focus', () => {
+    showTip();
+});
+
+breakDurationInput.addEventListener('focus', () => {
+    showTip();
+})
+
+workDurationInput.addEventListener('blur', () => {
+    hideTip();
+});
+
+breakDurationInput.addEventListener('blur', () => {
+    hideTip();
 });
 
 const minuteToSeconds = mins => {
@@ -205,4 +222,12 @@ const showStopIcon = () => {
 
 const checkSessionDuration = () => {
     sessionDuration = currentTimeLeftInSession;
+}
+
+const showTip = () => {
+    tipText.setAttribute('class', 'tip-visible');
+}
+
+const hideTip = () => {
+    tipText.setAttribute('class', 'tip-hidden');
 }

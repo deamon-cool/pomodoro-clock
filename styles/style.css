@@ -57,14 +57,19 @@ input::placeholder {
    width: 300px;
    margin: 15px 10px 10px;
 }
-#pomodoro-clock-title {
-   margin: 10px 10px;
-
-}
 .pomodoro-input {
    margin: 10px 10px;
    width: 50px;
 }
+.tip-hidden {
+   visibility: hidden;
+   font-size: 12px;
+}
+.tip-visible {
+   visibility: visible;
+   font-size: 12px;
+}
+
 
 
 h3 {
