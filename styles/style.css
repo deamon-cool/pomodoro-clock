@@ -26,7 +26,7 @@ input {
    padding: 5px;
    font-size: 20px;
    color: red;
-   border: 2px solid rgba(255,0,0,.5);
+   border: 3px solid rgba(255,0,0,.3);
    border-radius: 10px;
 }
 #pomodoro-clock-task {
@@ -35,8 +35,8 @@ input {
 
 }
 input:focus {
-   outline: 3px solid red;
-   outline-r
+   border-color: red;
+   outline: none;
 }
 input::placeholder {
    color: blue;
