@@ -21,7 +21,7 @@ const fillCanvasTimer = (step, duration, time) => {
 
     canvasTimer.lineWidth = 5;
 
-    canvasTimer.fillStyle = 'white';
+    canvasTimer.fillStyle = 'lightyellow';
 
     canvasTimer.strokeStyle = 'red';
 
