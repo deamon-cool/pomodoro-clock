@@ -53,6 +53,8 @@ let isClockStopped = true;
 
 let sessionDuration = 0; // for canvas-timer
 
+fillCanvasTimer(workSessionDuration, sessionDuration, '25:00'); // initial pomodoro timer view
+
 const toggleClock = (reset) => {
     togglePlayPauseButton(reset);
     if (reset) {
