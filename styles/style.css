@@ -19,7 +19,9 @@ body {
    display: none;
 }
 button {
-   border: 1px solid red;
+   background-color: rgba(255,0,0,.1);
+   border: 2px solid red;
+   border-radius: 10px;
    padding: 10px 15px;
    margin: 5px 10px 15px;
 }
@@ -28,6 +30,10 @@ button:hover {
 }
 button:focus {
    outline: none;
+   transition: 0.5s;
+}
+button:active {
+   background-color: rgba(255,0,0,.9);
 }
 h3 {
    font-size: 25px;
