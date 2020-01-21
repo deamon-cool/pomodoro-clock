@@ -1,4 +1,5 @@
 body {
+   box-sizing: border-box;
    font-family: arial;
    background-color: lightyellow;
    text-align: center;
