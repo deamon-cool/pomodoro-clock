@@ -1,6 +1,7 @@
 body {
    box-sizing: border-box;
    font-family: arial;
+   font-size: 20px;
    color: red;
    background-color: lightyellow;
    text-align: center;
@@ -57,9 +58,18 @@ input::placeholder {
    margin: 15px 10px 10px;
 }
 #pomodoro-clock-title {
+   margin: 10px 10px;
 
 }
-
+.pomodoro-input {
+   margin: 10px 10px;
+}
+#input-work-duration {
+   width: 50px;
+}
+#input-break-duration {
+   width: 50px;
+}
 
 
 h3 {
