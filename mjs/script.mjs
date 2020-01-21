@@ -70,7 +70,11 @@ let workSessionDuration = 1500; //1500/60=25mins
 let currentTimeLeftInSession = 1500; //1500/60=25mins
 let breakSessionDuration = 500; // 300/60=5mins
 
-let type = 'Work :)';
+const workConst = 'Work :)';
+const breakConst = 'Break :D';
+let type = workConst;
+
+
 
 let timeSpentInCurrentSession = 0;
 
@@ -149,7 +153,7 @@ const stopClock = () => {
     // 4) Update the timer displayed
     displayCurrentTimeLeftInSession();
 
-    type = 'Work :)';
+    type = workConst;
 }
 
 const stepDown = () => {
@@ -160,22 +164,22 @@ const stepDown = () => {
         currentTimeLeftInSession--;
     } else if (currentTimeLeftInSession === 0) {
         // Time is over -> if work switch to break
-        if (type === 'Work :)') {
+        if (type === workConst) {
             currentTimeLeftInSession = breakSessionDuration;
-            displaySessionLog('Work :)');
-            type = 'Break :D';
-            currentTaskLabel.value = 'Break :D';
+            displaySessionLog(workConst);
+            type = breakConst;
+            currentTaskLabel.value = breakConst;
             currentTaskLabel.disabled = true;
         } else {
             currentTimeLeftInSession = workSessionDuration;
-            type = 'Work :)';
+            type = workConst;
             // If will be 'Break :D' after end of the time in the input so will be switched to workSessionLabel(input from the user)
-            if (currentTaskLabel.value === 'Break :D') {
+            if (currentTaskLabel.value === breakConst) {
                 currentTaskLabel.value = workSessionLabel;
             }
             currentTaskLabel.disabled = false;
 
-            displaySessionLog('Break :D');
+            displaySessionLog(breakConst);
         }
         setUpdatedTimers();
         timeSpentInCurrentSession = 0;
@@ -189,11 +193,11 @@ const displaySessionLog = (type) => {
     const li = document.createElement('li');
 
     // If there is any input from user it will be displayed in list log session at the end of time
-    if (type === 'Work :)') {
-        sessionLabel = currentTaskLabel.value ? currentTaskLabel.value : 'Work :)';
+    if (type === workConst) {
+        sessionLabel = currentTaskLabel.value ? currentTaskLabel.value : workConst;
         workSessionLabel = sessionLabel;
     } else {
-        sessionLabel = 'Break :D';
+        sessionLabel = breakConst;
     }
     // to label    'Work :)'/ 'Break :D' / $user-input    adds spent time [min]
     let elapsedTime = parseInt(timeSpentInCurrentSession / 60);
@@ -205,7 +209,7 @@ const displaySessionLog = (type) => {
 }
 
 const setUpdatedTimers = () => {
-    if (type === 'Work :)') {
+    if (type === workConst) {
         currentTimeLeftInSession = updatedWorkSessionDuration ? updatedWorkSessionDuration : workSessionDuration
         workSessionDuration = currentTimeLeftInSession;
     } else {
