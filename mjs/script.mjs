@@ -6,6 +6,7 @@ const stopButton = document.querySelector('#pomodoro-stop');
 let workDurationInput = document.querySelector('#input-work-duration');
 let breakDurationInput = document.querySelector('#input-break-duration');
 let tipText = document.querySelector('.tip-hidden');
+let audioAlarm = document.querySelector('#alarm-adudio');
 
 // Initial text on the site
 let clockTaskInput = document.querySelector('#pomodoro-clock-task');
@@ -163,6 +164,8 @@ const stepDown = () => {
         // decrease time left, increase time spent
         currentTimeLeftInSession--;
     } else if (currentTimeLeftInSession === 0) {
+        audioAlarm.play();
+
         // Time is over -> if work switch to break
         if (type === workConst) {
             currentTimeLeftInSession = breakSessionDuration;
