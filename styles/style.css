@@ -90,3 +90,6 @@ li {
    border-radius: 10px;
    margin-top: 5px;
 }
+input:hover {
+   box-shadow: 0 0 6px red;
+}
