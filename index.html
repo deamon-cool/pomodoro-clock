@@ -36,18 +36,28 @@
 
         </div>
 
-        <div>
-            <div>
-                <label id="work-label"></label>
-                <input type="number" name="input-work-duration" class="pomodoro-input" id="input-work-duration">
-            </div>
-            <div>
-                <label id="break-label"></label>
-                <input type="number" name="input-break-duration" class="pomodoro-input" id="input-break-duration">
-            </div>
-            <div class="tip-hidden">
-                <i id="tip-text"></i>
-            </div>
+        <div id="pomodoro-parameters">
+            <table>
+                <tr id="first-row">
+                    <td class="first-col"><label id="work-label"></label></td>
+                    <td class="second-col">
+                        <input type="number" name="input-work-duration" class="pomodoro-input" id="input-work-duration">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-col"><label id="break-label"></label></td>
+                    <td class="second-col">
+                        <input type="number" name="input-break-duration" class="pomodoro-input" id="input-break-duration">
+                    </td>
+                </tr>
+                <tr id="second-row">
+                    <td colspan="2">
+                        <div class="tip-hidden">
+                            <i id="tip-text"></i>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <div id="pomodoro-info">

@@ -93,3 +93,19 @@ li {
 input:hover {
    box-shadow: 0 0 6px red;
 }
+#pomodoro-parameters {
+   display: inline-block;
+   margin: 10px;
+}
+div#pomodoro-parameters table {
+   border-collapse: collapse;
+}
+div#pomodoro-parameters td.first-col {
+   width: 50%;
+   text-align: right;
+}
+div#pomodoro-parameters td.second-col {
+   width: 50%;
+   text-align: left;
+   padding-left: 20px;
+}
