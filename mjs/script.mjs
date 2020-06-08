@@ -69,7 +69,7 @@ let isClockRunning = false;
 
 let workSessionDuration = 1500; //1500/60=25mins
 let currentTimeLeftInSession = 1500; //1500/60=25mins
-let breakSessionDuration = 500; // 300/60=5mins
+let breakSessionDuration = 300; // 300/60=5mins
 
 const workConst = 'Work :)';
 const breakConst = 'Break :D';
